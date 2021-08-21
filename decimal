@@ -1,0 +1,8 @@
+public function decimal($val){
+		$a = explode('.', $val);
+		if(isset($a[1])){
+		    if(count($a[1]) < 2) $res = $val.'0';
+		} else $res = $val.'.00';
+
+		return $res;
+	}
